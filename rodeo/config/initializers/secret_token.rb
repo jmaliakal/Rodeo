@@ -1,7 +1,12 @@
 # Be sure to restart your server when you modify this file.
 
-# Your secret key for verifying the integrity of signed cookies.
+# Your secret key is used for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
+
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Rodeo::Application.config.secret_token = '06337aeb9083455aaab3c00aaa097c129b18952b81fd9775d70e84f90225b73fd1b1b36221e69c5d609174724d1f6762526a78d7731a1b767705c0e0715e7a24'
+# You can use `rake secret` to generate a secure secret key.
+
+# Make sure your secret_key_base is kept private
+# if you're sharing your code publicly.
+Rodeo::Application.config.secret_key_base = '44ecd4c9da31215e8aff33c50d94f3099c4a4016ec9ddfd5082cbed403528e8ac97e71b3a868b317d26a723ed01a00d7553ea0b81ce4f717c2d286608b69ea35'
